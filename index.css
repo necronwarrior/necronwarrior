@@ -1,0 +1,19 @@
+body {
+	background-color:#cc3aff;
+	padding:50px;
+}
+
+
+h1,h2 {
+	background-color:Teal;
+}
+
+
+#tempContent{
+	font-size:larger;
+	background-color:Magenta;
+}
+
+.quotation{
+	background-color:#0000FF;
+}
