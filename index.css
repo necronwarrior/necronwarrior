@@ -3,17 +3,26 @@ body {
 	padding:50px;
 }
 
+div{
+	font-size:150%;
+}
 
 h1,h2 {
 	background-color:Teal;
+	font-size:200%;
 }
 
 
 #tempContent{
-	font-size:larger;
 	background-color:Magenta;
 }
 
 .quotation{
 	background-color:#0000FF;
+}
+
+*
+{
+	font-size:medium;
+	background-color:green;
 }
