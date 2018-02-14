@@ -3,13 +3,17 @@ body {
 	padding:50px;
 }
 
+html {
+	padding:0px;
+	margin:0px;
+}
+
 div{
 	font-size:150%;
 }
 
 h1,h2 {
 	background-color:Teal;
-	font-size:200%;
 }
 
 
@@ -23,6 +27,19 @@ h1,h2 {
 
 *
 {
-	font-size:medium;
-	background-color:green;
+	//background-color:green;
+}
+
+header nav li{
+	display:inline;
+}
+
+.resultslist{
+	margin:5px;
+	border:10px solid #888;
+	font-size:50%;
+}
+
+.resultslist .title{
+	font-weight:bold;
 }
