@@ -81,9 +81,4 @@ resultList.toggle(500);
 if(toggleB.text() == "Hide") toggleB.text("Show");
 else toggleB.text("Hide")
 });
-
-var listitems = $("header nav li");
-listitems.css("font-weight", "bold");
-listitems.filter(":first").css("font-size","72px");
-
 });
