@@ -77,8 +77,9 @@ console.log(msg);
 
 var toggleB = $("#Togglebutton");
 toggleB.on("click", function() {
-resultList.toggle(500);
-if(toggleB.text() == "Hide") toggleB.text("Show");
-else toggleB.text("Hide")
-});
+	resultList.toggle(500);
+	if(toggleB.text() == "Hide") toggleB.text("Show");
+	else toggleB.text("Hide")
+	});
+
 });
