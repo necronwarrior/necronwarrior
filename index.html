@@ -20,7 +20,7 @@
 						<div>
 							<a href="index.html" class="navlist">Home</a>
 							<a href="about.html" class="navlist">About</a>
-							<div class="dropdown"  class="navlist">
+							<div class="dropdown navlist">
 								<div class= "dropbtn" >GameJam Games
 									
 								</div>
@@ -29,14 +29,24 @@
 									<a href="Whacktopus.html">Whacktopus</a>
 								</div>
 							</div>
-							<a href="index.html" class="navlist">Home</a>
 						</div>
 					</ul>
 				</nav>
 			</header>
 		</div>
+		<div id="upperbuffer"></div>
 		<div class="container">
 		<a href="http://www.iwanttoworkforblizzard.com/">This is hope</a>
+		</div>
+		<div class="w3-content w3-display-container">
+			<img class="mySlides" src="images/S1.png">
+			<img class="mySlides" src="images/S2.png">
+			<img class="mySlides" src="images/S3.png">
+			<img class="mySlides" src="images/S4.png">
+
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		
 		</div>
 		<h1 align ="center">
 			Portfolio Under Construction :)
@@ -53,12 +63,29 @@
 			dfnsjkdfnbjds
 			djfsbkbfjksfkbdjkfjdksjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 		</p>
-		<button id="Togglebutton">Hide</button>	
-		<div class="resultslist" id="resultslist"> this is where the results will live</div>
-
+		
 		<footer>
 			<p> Copyright &copy; 2019, JackWillBaptie</p>
 		</footer>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+		</script>
 		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 	</body>
