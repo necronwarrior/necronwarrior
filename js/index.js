@@ -88,16 +88,32 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block"; 
 }
 
+document.getElementById("ButtonClickLeft").onclick = function() {
+	showDivs(slideIndex -= 1);
+};
+document.getElementById("ButtonClickRight").onclick = function() {
+	showDivs(slideIndex += 1);
+};
+
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 6000); // Change image every 2 seconds
+}
+
 //buttonstuff
 var msg = "hello sebi";
 console.log(msg);
 
-
-var toggleB = $("#Togglebutton");
-toggleB.on("click", function() {
-	resultList.toggle(500);
-	if(toggleB.text() == "Hide") toggleB.text("Show");
-	else toggleB.text("Hide")
-	});
 
 });
