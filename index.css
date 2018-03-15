@@ -21,15 +21,27 @@ html {
 	border:0px;
 }
 
+p{
+	color:white;
+	
+	font-family:joystix;
+}
+
 div{
 
 }
 
 h1,h2 {
 	color:white;
+	
+	font-family:joystix;
 	background-color:Black;
 }
 
+footer{
+	margin:auto;
+	width:50%;
+}
 
 #Togglebutton{
 
@@ -282,6 +294,65 @@ nav{
     display: block;
 }
 
+.SocialCards{
+	text-align:center
+	}
+	
+.SocialCard{
+	display:inline-block;
+	height:71px;
+	width:99px;
+	margin:auto;
+	vertical-align:bottom;
+	background:transparent url(images/ui/social-cards-4db02a8933351b0870f1dc00fa58df807b83f09d96f145c4579d78fc01b2b079dd6c1fa4fcee4834eae4651e0b361fde995e1429c07585fdacb46c06c5f44a6a.png) 0 0 no-repeat;
+	transition:none;
+	margin:0 -20px
+	}@media (min-width:40em)
+	{
+		.SocialCard{
+			margin:0 -15px
+			}
+	}
+	.SocialCard--facebook{
+		background-position:0 0
+	}
+		.SocialCard--facebook:active,
+		.SocialCard--facebook:hover{
+			background-position:0 -77px
+			}
+			
+	.SocialCard--twitter{
+		background-position:-99px 0
+	}
+		.SocialCard--twitter:active,
+		.SocialCard--twitter:hover{
+			background-position:-99px -77px
+		}
+		
+	.SocialCard--youtube{
+		background-position:-198px 0
+	}
+		.SocialCard--youtube:active,
+		.SocialCard--youtube:hover{
+			background-position:-198px -77px
+		}
+		
+	.SocialCard--linkedin{
+		background-position:-297px 0
+	}
+		.SocialCard--linkedin:active,
+		.SocialCard--linkedin:hover{
+			background-position:-297px -77px
+		}
+
+		
+	.SocialCard--instagram{
+		background-position:-396px 0
+	}
+		.SocialCard--instagram:active,
+		.SocialCard--instagram:hover{
+			background-position:-396px -77px
+		}
 			
 .resultslist{
 	margin:5px;
@@ -319,6 +390,10 @@ nav{
 	-webkit-transform-origin: 0 0;
 }
 
+#AboutDiv{
+	padding-left:30px;	
+}
+
 #JackImage{
 	zoom: 0.5;
 	-o-transform:scale:(0.5);
@@ -326,7 +401,6 @@ nav{
 	display:block;
 	border:5px;
 	border-radius:500px;
-	margin-top:10%;
 	margin-right:10%;
 }
 
