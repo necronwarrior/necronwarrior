@@ -108,11 +108,12 @@ nav{
 		font-size:28px;
 		color:#7B23A7;
 		font-family:joystix;
-		border-style:outset;
-		border-color:buttonface;
-		border-width:1px;
+
 		
-		background-color: #4FAAEC;
+		background:transparent url(images/ui/NavButton.png);
+		
+		background-size:100% 100%;
+		
 		padding-top: 10px;
 		padding-right: 10px;
 		padding-bottom: 10px;
@@ -120,6 +121,11 @@ nav{
 	
 		text-decoration: none;
 	}
+		nav .navlist 
+
+		nav .navlist #RightNav {
+			background:transparent url(images/ui/RightNavButton.png);
+		}		
 	
 		nav .navlist:hover{
 			background-color: #C8CFEA;
@@ -180,6 +186,10 @@ nav{
 			color:#7B23A7;
 			}
 
+#LeftNav {
+	background:transparent url(images/ui/LeftNavButton.png);
+}	
+			
 #MainName{
 	color:#7B23A7;
 	font-family:dpcomic;
@@ -329,29 +339,21 @@ nav{
 			background-position:-99px -77px
 		}
 		
-	.SocialCard--youtube{
-		background-position:-198px 0
-	}
-		.SocialCard--youtube:active,
-		.SocialCard--youtube:hover{
-			background-position:-198px -77px
-		}
-		
 	.SocialCard--linkedin{
-		background-position:-297px 0
+		background-position:-198px 0
 	}
 		.SocialCard--linkedin:active,
 		.SocialCard--linkedin:hover{
-			background-position:-297px -77px
+			background-position:-198px -77px
 		}
 
 		
 	.SocialCard--instagram{
-		background-position:-396px 0
+		background-position:-297px 0
 	}
 		.SocialCard--instagram:active,
 		.SocialCard--instagram:hover{
-			background-position:-396px -77px
+			background-position:-297px -77px
 		}
 			
 .resultslist{
