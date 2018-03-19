@@ -8,6 +8,11 @@ font-family:joystix;
 src:url(fonts/joystix_monospace.ttf);
 }
 
+@font-face{
+font-family:Friz;
+src:url(fonts/Friz_Quadrata_Std_Regular.otf);
+}
+
 body {
 	background-color:Black;
 	padding:0px;
@@ -38,10 +43,31 @@ h1,h2 {
 	background-color:Black;
 }
 
+h3{
+position:inline;
+}
+
 footer{
 	margin:auto;
 	width:50%;
 }
+
+marquee{
+color:white;
+}
+
+blink, .blink {
+	
+	color:white;
+-webkit-animation: blink 1s step-end infinite;
+-moz-animation: blink 1s step-end infinite;
+-o-animation: blink 1s step-end infinite;
+animation: blink 1s step-end infinite;
+}
+@-webkit-keyframes blink { 67% { opacity: 0 }}
+@-moz-keyframes blink {  67% { opacity: 0 }}
+@-o-keyframes blink {  67% { opacity: 0 }}
+@keyframes blink {  67% { opacity: 0 }}
 
 #Togglebutton{
 
@@ -70,7 +96,7 @@ footer{
 }
 
 #upperbuffer{
-	padding-top:140px;
+	padding-top:210px;
 }
 
 .quotation{
@@ -89,6 +115,8 @@ footer{
 	box-sizing: inherit;
 }
 
+
+
 nav{
 
 	position: fixed;		
@@ -96,23 +124,32 @@ nav{
 	top: 0;
 	padding:1px;
 	width:100%;
-	height:130px;
-	background-color:#FC8120;
+	height:100px;
+	background: url(images/NavBarBG.png);
+	background-repeat:no-repeat;
+	background-size:100%;
 	white-space:nowrap;
 	z-index: 999;
+	
+	border: 20px solid transparent;
+	padding:30px;
+    -webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
+    -o-border-image: url(images/ui/BottomBorder.png) 30% round; /* Opera 11-12.1 */
+    border-image: url(images/ui/BottomBorder.png) 30% round;
+	
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
 }
+
 	nav .navlist{
 
 		float:left;
 		
 		font-size:28px;
-		color:#7B23A7;
-		font-family:joystix;
+		color:#FFF44F;
+		font-family:Friz;
 
-		
-		background:transparent url(images/ui/NavButton.png);
-		
-		background-size:100% 100%;
 		
 		padding-top: 10px;
 		padding-right: 10px;
@@ -121,58 +158,126 @@ nav{
 	
 		text-decoration: none;
 	}
-		nav .navlist 
-
-		nav .navlist #RightNav {
-			background:transparent url(images/ui/RightNavButton.png);
-		}		
-	
-		nav .navlist:hover{
-			background-color: #C8CFEA;
+		nav .LeftNavButton{
+			width:413px;
+			height:72px;
+			background:transparent url(images/ui/LeftNavButton.png);
+			background-size:auto;
 		}
 		
-		nav  .dropdown-content {
-			display: none;
-			position: absolute;
-			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				
+		nav .LeftNavButton .tagTitle{
+			padding-left:45px;
+			text-align:center;
+		}
+		
+		nav .LeftNavButton:hover {
+			background:transparent url(images/ui/LeftNavButtonHover.png);
 		}
 
-			nav .dropdown-content a {
-				padding: 12px 16px;
-				display: inline-block;
+		nav .RightNavButton{			
+			width:413px;
+			height:72px;
+			background:transparent url(images/ui/RightNavButton.png);
+			background-size:auto;
+		}
+		
+		nav .RightNavButton .tagTitle{
+			z-index:1;
+			padding-left:70px;
+			text-align:left;
+		}
+		
+		nav .RightNavButton:hover {
+			background:transparent url(images/ui/RightNavButtonHover.png);
+		}
+		
+		nav .CenterNavButton{
+			width:367px;
+			height:72px;
+			background:transparent url(images/ui/NavButton.png);
+			background-size:auto;
+		}
+				
+		nav .CenterNavButton .tagTitle{
+			text-align:center;
+		}
+	
+		nav .CenterNavButton:hover {
+			background:transparent url(images/ui/NavButtonHover.png);
+		}
+		
+		nav .navlist .tagTitle{
+			padding-top:17px;
+		}
+		
+		nav .navlist .dropdown-content {
+			top:87px;
+			display: none;
+			position: absolute;
+			min-width: 100%;
+			overflow:auto;
+		}
+
+		nav .navlist .dropdown-content a {
+				
+				z-index:0;
+				padding-top:10px;
+				padding-bottom:10px;
+				width:350px;
+				height:auto;
+				background:transparent url(images/ui/NavButtonDrop.png);
+				background-repeat:no-repeat;
+				background-size:350px 60px;
+				
 				
 				font-size:28px;
-				color:#7B23A7;
-				font-family:joystix;
-				border-style:outset;
-				border-color:buttonface;
-				border-width:1px;
-				background-color: #4FAAEC;
+				color:#FFF44F;
+				font-family:Friz;
+				text-decoration: none;
+				
+				
+				text-align:center;
+	
 				
 				float:left;
 			}
 
-			nav .dropdown-content a:hover {
+			nav .navlist .dropdown-content a:hover {
+				background:transparent url(images/ui/NavButtonDropHover.png);
+				background-repeat:no-repeat;
+				background-size:350px 60px;
 				
-				background-color: #C8CFEA;
 			}
-			
+		nav .navlist .dropdown-content .dropcap {
+			display: block;
+			z-index:0;
+				padding-top:10px;
+				padding-bottom:10px;
+			width:350px;
+				height:auto;
+			background:transparent url(images/ui/NavButtonDropBottomCap.png);
+				background-repeat:no-repeat;
+				background-size:350px 18px;
+		
+		}	
+
+		nav .navlist .dropdown-content .dropcap:hover {		
+		background:transparent url(images/ui/NavButtonDropBottomCap.png);
+				background-repeat:no-repeat;
+				background-size:350px 18px;
+		}
+		
 		nav .dropdown {
 			position: relative;
 			display: inline-block;
-					
-			font-size:28px;
-			color:#7B23A7;
-			font-family:joystix;
-			border-style:outset;
-			border-color:buttonface;
-			border-width:1px;
-			background-color: #4FAAEC;
+
 			padding-top: 10px;
 			padding-right: 10px;
 			padding-bottom: 10px;
 			padding-left: 10px;
+			
+			z-index:2;
 			}
 		
 			nav .dropdown:hover .dropdown-content {
@@ -180,10 +285,6 @@ nav{
 			}
 				
 			nav .dropdown:hover{
-				background-color: #C8CFEA;
-			}
-			nav .dropdown .dropbtn{
-			color:#7B23A7;
 			}
 
 #LeftNav {
@@ -191,19 +292,28 @@ nav{
 }	
 			
 #MainName{
-	color:#7B23A7;
-	font-family:dpcomic;
-	font-size:250%;
-						
-	padding-top:20px;
+	color:#FFFFFF;
+	font-family:Joystix;
+	font-size:300%;
+		
+	vertical-align:left;
+		
 	padding-right: 40px;
 	padding-bottom:20px;
 	margin-right: 10px;
-	margin-top: -20px;
+	
+	display:table-cell;
+
+    text-shadow:
+    -2px -2px 0 #FF00FF,
+    2px -2px 0 #00FFFF,
+    -2px 2px 0 #FF0000,
+    2px 2px 0 #0000FF; 
 }
 			
 .mySlides{
-	width:100%;
+	margin:auto;
+	width:50%;
 	height:auto;
 }
 
@@ -305,7 +415,8 @@ nav{
 }
 
 .SocialCards{
-	text-align:center
+	display:table-cell;
+	vertical-align:middle;
 	}
 	
 .SocialCard{
@@ -366,14 +477,22 @@ nav{
 	font-weight:bold;
 }
 
+
 #wrapperbio { 
+	margin:auto;
 	width: 370px; 
 	height: 640px;  
-	padding-left:30%; 
-	padding-right:30%; 
 	overflow: hidden; 
 }
 #wrapperwhack { 
+	margin:auto;
+	width: 1280px; 
+	height: 768px;  
+	overflow: hidden; 
+}
+
+#scaled-framewhack { 
+	margin:auto;
 }
 
 #scaled-framebio { 
