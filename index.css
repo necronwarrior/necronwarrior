@@ -466,6 +466,14 @@ nav{
 		.SocialCard--instagram:hover{
 			background-position:-297px -77px
 		}
+		
+	.SocialCard--tumblr{
+	background-position:-396px 0
+	}
+		.SocialCard--tumblr:active,
+		.SocialCard--tumblr:hover{
+			background-position:-396px -77px
+		}
 			
 .resultslist{
 	margin:5px;
