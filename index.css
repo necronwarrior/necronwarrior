@@ -1,16 +1,28 @@
-@font-face{
-font-family:dpcomic;
-src:url(fonts/dpcomic.ttf);
+* //css reset
+{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	box-sizing: inherit;
 }
 
 @font-face{
-font-family:joystix;
-src:url(fonts/joystix_monospace.ttf);
+	font-family:dpcomic;
+	src:url(fonts/dpcomic.ttf);
 }
 
 @font-face{
-font-family:Friz;
-src:url(fonts/Friz_Quadrata_Std_Regular.otf);
+	font-family:joystix;
+	src:url(fonts/joystix_monospace.ttf);
+}
+
+@font-face{
+	font-family:Friz;
+	src:url(fonts/Friz_Quadrata_Std_Regular.otf);
 }
 
 body {
@@ -28,23 +40,13 @@ html {
 
 p{
 	color:white;
-	
 	font-family:joystix;
-}
-
-div{
-
 }
 
 h1,h2 {
 	color:white;
-	
 	font-family:joystix;
 	background-color:Black;
-}
-
-h3{
-position:inline;
 }
 
 footer{
@@ -52,25 +54,20 @@ footer{
 	width:50%;
 }
 
-marquee{
-color:white;
+blink, .blink {
+	color:white;
+	-webkit-animation: blink 1s step-end infinite;
+	-moz-animation: blink 1s step-end infinite;
+	-o-animation: blink 1s step-end infinite;
+	animation: blink 1s step-end infinite;
 }
 
-blink, .blink {
-	
-	color:white;
--webkit-animation: blink 1s step-end infinite;
--moz-animation: blink 1s step-end infinite;
--o-animation: blink 1s step-end infinite;
-animation: blink 1s step-end infinite;
-}
 @-webkit-keyframes blink { 67% { opacity: 0 }}
 @-moz-keyframes blink {  67% { opacity: 0 }}
 @-o-keyframes blink {  67% { opacity: 0 }}
 @keyframes blink {  67% { opacity: 0 }}
 
 #Togglebutton{
-
 	width:100%;
 	height:130px;
 	background-color:#FC8120;
@@ -91,34 +88,11 @@ animation: blink 1s step-end infinite;
 		background-color: #C8CFEA;
 	}
 
-#tempContent{
-	background-color:Black;
-}
-
 #upperbuffer{
 	padding-top:210px;
 }
 
-.quotation{
-	background-color:#0000FF;
-}
-
-* //css reset
-{
-	margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-	box-sizing: inherit;
-}
-
-
-
 nav{
-
 	position: fixed;		
 	display:inline-block;
 	top: 0;
@@ -286,16 +260,11 @@ nav{
 				
 			nav .dropdown:hover{
 			}
-
-#LeftNav {
-	background:transparent url(images/ui/LeftNavButton.png);
-}	
 			
 #MainName{
 	color:#FFFFFF;
 	font-family:Joystix;
 	font-size:300%;
-	
 	
 	vertical-align:left;
 		
@@ -323,39 +292,38 @@ nav{
 	animation:animateleft 0.4s
 }
 @keyframes animateleft{
-	from{left:-300px;
-	opacity:0
+	from{
+		left:-300px;
+		opacity:0
 	} to{
 		left:0;
 		opacity:1
 	}
-	}	
+}	
 
 .w3-animate-fading{
 	animation:fading 7s infinite
-	}@keyframes fading{
-		0%{
-			opacity:0
-		}25%{
-			opacity:1
-		}75%{
-			opacity:1
-		}100%{
-			opacity:0
-		}
+}
+@keyframes fading{
+	0%{
+		opacity:0
+	}25%{
+		opacity:1
+	}75%{
+		opacity:1
+	}100%{
+		opacity:0
 	}
-	
-.w3-content{
-
-	}
+}
 	
 .w3-display-container{
 	position:relative;
-	}
+}
 	
 .w3-display-container:hover {
 	display:block;
-	}
+}
+
 .w3-display-container:hover span
 
 .w3-button{
@@ -370,29 +338,23 @@ nav{
 	text-align:center;
 	cursor:pointer;
 	white-space:nowrap;
-}
-.w3-button{
+
 	-webkit-touch-callout:none;
 	-webkit-user-select:none;
 	-khtml-user-select:none;
 	-moz-user-select:none;
 	-ms-user-select:none;
 	user-select:none;
-} 
-
-.w3-black, .w3-hover-black:hover {
-    color: #fff!important;
-    background-color: #000!important;
 }
 
-.w3-button:disabled{
-	cursor:not-allowed;
-	opacity:0.3
-}
+	.w3-button:disabled{
+		cursor:not-allowed;
+		opacity:0.3
+	}
 
-.w3-button:hover{
-	color:#000!important;
-	background-color:#ccc!important;
+	.w3-button:hover{
+		color:#000!important;
+		background-color:#ccc!important;
 	}
 
 .w3-display-left{
@@ -410,15 +372,11 @@ nav{
 	transform:translate(0%,-50%);
 	//-ms-transform:translate(0%,-50%);
 }
-	
-.show {
-    display: block;
-}
 
 .SocialCards{
 	display:table-cell;
 	vertical-align:middle;
-	}
+}
 	
 .SocialCard{
 	display:inline-block;
@@ -429,19 +387,18 @@ nav{
 	background:transparent url(images/ui/social-cards-4db02a8933351b0870f1dc00fa58df807b83f09d96f145c4579d78fc01b2b079dd6c1fa4fcee4834eae4651e0b361fde995e1429c07585fdacb46c06c5f44a6a.png) 0 0 no-repeat;
 	transition:none;
 	margin:0 -20px
-	}@media (min-width:40em)
-	{
-		.SocialCard{
+}@media (min-width:40em){
+	.SocialCard{
 			margin:0 -15px
-			}
 	}
+}
 	.SocialCard--facebook{
 		background-position:0 0
 	}
 		.SocialCard--facebook:active,
 		.SocialCard--facebook:hover{
 			background-position:0 -77px
-			}
+		}
 			
 	.SocialCard--twitter{
 		background-position:-99px 0
@@ -475,24 +432,14 @@ nav{
 		.SocialCard--tumblr:hover{
 			background-position:-396px -77px
 		}
-			
-.resultslist{
-	margin:5px;
-	border:10px solid #888;
-	font-size:50%;
-}
-
-.resultslist .title{
-	font-weight:bold;
-}
-
-
+	
 #wrapperbio { 
 	margin:auto;
 	width: 370px; 
 	height: 640px;  
 	overflow: hidden; 
 }
+
 #wrapperwhack { 
 	margin:auto;
 	width: 1280px; 
@@ -518,10 +465,6 @@ nav{
 	-o-transform-origin: 0 0;
 	-webkit-transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
-}
-
-#AboutDiv{
-	padding-left:30px;	
 }
 
 #JackImage{

@@ -9,7 +9,6 @@ $("#NAVFRAME").load("navbar.html");
 var togglespace = $("#togglespace");
 togglespace.toggle(0);
 
-
 var toggleB = $("#Togglebutton");
 toggleB.on("click", function() {
 	togglespace.toggle(500);
