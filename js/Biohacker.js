@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 "use strict";
 
+$("#NAVFRAME").load("navbar.html");
 
 var togglespace = $("#togglespace");
 togglespace.toggle(0);
