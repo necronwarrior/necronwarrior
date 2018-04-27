@@ -1,0 +1,201 @@
+* //css reset
+{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	box-sizing: inherit;
+
+}
+
+nav{
+	position: fixed;		
+	display:inline-block;
+	top: 0;
+	padding:1px;
+	width:100%;
+	height:100px;
+	background: url(images/NavBarBG.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	white-space:nowrap;
+	z-index: 999;
+	
+	border: 20px solid transparent;
+	padding:30px;
+    -webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
+    -o-border-image: url(images/ui/BottomBorder.png) 30% round; /* Opera 11-12.1 */
+    border-image: url(images/ui/BottomBorder.png) 30% round;
+	
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+}
+
+	nav .navlist{
+
+		float:left;
+		
+		font-size:28px;
+		color:#FFF44F;
+		font-family:Friz;
+
+		
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	
+		text-decoration: none;
+	}
+		nav .LeftNavButton{
+			width:413px;
+			height:72px;
+			background:transparent url(images/ui/NavButton.png);
+			background-size:auto;
+		}
+		
+				
+		nav .LeftNavButton .tagTitle{
+			padding-left:45px;
+			text-align:center;
+		}
+		
+		nav .LeftNavButton:hover {
+			background:transparent url(images/ui/NavButtonHover.png);
+		}
+
+		nav .RightNavButton{			
+			width:413px;
+			height:72px;
+			background:transparent url(images/ui/NavButton.png);
+			background-size:auto;
+		}
+		
+		nav .RightNavButton .tagTitle{
+			z-index:1;
+			padding-left:130px;
+			text-align:center;
+		}
+		
+		nav .RightNavButton:hover {
+			background:transparent url(images/ui/NavButtonHover.png);
+		}
+		
+		nav .CenterNavButton{
+			width:367px;
+			height:72px;
+			background:transparent url(images/ui/NavButton.png);
+			background-size:auto;
+		}
+				
+		nav .CenterNavButton .tagTitle{
+			text-align:center;
+		}
+	
+		nav .CenterNavButton:hover {
+			background:transparent url(images/ui/NavButtonHover.png);
+		}
+		
+		nav .navlist .tagTitle{
+			padding-top:17px;
+		}
+		
+		nav .navlist .dropdown-content {
+			top:87px;
+			display: none;
+			position: absolute;
+			min-width: 100%;
+			overflow:auto;
+		}
+
+		nav .navlist .dropdown-content a {
+				
+				z-index:0;
+				padding-top:10px;
+				padding-bottom:10px;
+				width:350px;
+				height:auto;
+				background:transparent url(images/ui/NavButtonDrop.png);
+				background-repeat:no-repeat;
+				background-size:350px 60px;
+				
+				
+				font-size:28px;
+				color:#FFF44F;
+				font-family:Friz;
+				text-decoration: none;
+				
+				
+				text-align:center;
+	
+				
+				float:left;
+			}
+
+			nav .navlist .dropdown-content a:hover {
+				background:transparent url(images/ui/NavButtonDropHover.png);
+				background-repeat:no-repeat;
+				background-size:350px 60px;
+				
+			}
+		nav .navlist .dropdown-content .dropcap {
+			display: block;
+			z-index:0;
+				padding-top:10px;
+				padding-bottom:10px;
+			width:350px;
+				height:auto;
+			background:transparent url(images/ui/NavButtonDropBottomCap.png);
+				background-repeat:no-repeat;
+				background-size:350px 18px;
+		
+		}	
+
+		nav .navlist .dropdown-content .dropcap:hover {		
+		background:transparent url(images/ui/NavButtonDropBottomCap.png);
+				background-repeat:no-repeat;
+				background-size:350px 18px;
+		}
+		
+		nav .dropdown {
+			position: relative;
+			display: inline-block;
+
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			
+			z-index:2;
+			}
+		
+			nav .dropdown:hover .dropdown-content {
+				display: block;
+			}
+				
+			nav .dropdown:hover{
+			}
+			
+#MainName{
+	color:#FFFFFF;
+	font-family:Joystix;
+	font-size:300%;
+	
+	vertical-align:left;
+		
+	padding-right: 40px;
+	padding-bottom:20px;
+	margin-right: 10px;
+	
+	display:table-cell;
+
+    text-shadow:
+    -2px -2px 0 #FF00FF,
+    2px -2px 0 #00FFFF,
+    -2px 2px 0 #FF0000,
+    2px 2px 0 #0000FF; 
+}

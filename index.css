@@ -8,6 +8,7 @@
     vertical-align: baseline;
     background: transparent;
 	box-sizing: inherit;
+
 }
 
 @font-face{
@@ -39,13 +40,17 @@ html {
 }
 
 p{
+	margin-left:10%; 
+	margin-right:10%; 
 	color:white;
-	font-family:joystix;
+	font-family:Friz;
 }
 
 h1,h2 {
+	margin-left:10%; 
+	margin-right:10%;
 	color:white;
-	font-family:joystix;
+	font-family:Friz;
 	background-color:Black;
 }
 
@@ -93,7 +98,7 @@ blink, .blink {
 }
 
 #downloadDis{
-	background:url(images/dlDissertationButton.png);
+	background:url(images/ui/dlDissertationButton.png);
 	background-size:100%;
 	height:135px;
 	width:150px;
@@ -105,194 +110,7 @@ blink, .blink {
 	border-radius:400px;
 }
 
-nav{
-	position: fixed;		
-	display:inline-block;
-	top: 0;
-	padding:1px;
-	width:100%;
-	height:100px;
-	background: url(images/NavBarBG.png);
-	background-repeat:no-repeat;
-	background-size:100%;
-	white-space:nowrap;
-	z-index: 999;
-	
-	border: 20px solid transparent;
-	padding:30px;
-    -webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
-    -o-border-image: url(images/ui/BottomBorder.png) 30% round; /* Opera 11-12.1 */
-    border-image: url(images/ui/BottomBorder.png) 30% round;
-	
-	border-top-width:0px;
-	border-left-width:0px;
-	border-right-width:0px;
-}
 
-	nav .navlist{
-
-		float:left;
-		
-		font-size:28px;
-		color:#FFF44F;
-		font-family:Friz;
-
-		
-		padding-top: 10px;
-		padding-right: 10px;
-		padding-bottom: 10px;
-		padding-left: 10px;
-	
-		text-decoration: none;
-	}
-		nav .LeftNavButton{
-			width:413px;
-			height:72px;
-			background:transparent url(images/ui/LeftNavButton.png);
-			background-size:auto;
-		}
-		
-				
-		nav .LeftNavButton .tagTitle{
-			padding-left:45px;
-			text-align:center;
-		}
-		
-		nav .LeftNavButton:hover {
-			background:transparent url(images/ui/LeftNavButtonHover.png);
-		}
-
-		nav .RightNavButton{			
-			width:413px;
-			height:72px;
-			background:transparent url(images/ui/RightNavButton.png);
-			background-size:auto;
-		}
-		
-		nav .RightNavButton .tagTitle{
-			z-index:1;
-			padding-left:130px;
-			text-align:center;
-		}
-		
-		nav .RightNavButton:hover {
-			background:transparent url(images/ui/RightNavButtonHover.png);
-		}
-		
-		nav .CenterNavButton{
-			width:367px;
-			height:72px;
-			background:transparent url(images/ui/NavButton.png);
-			background-size:auto;
-		}
-				
-		nav .CenterNavButton .tagTitle{
-			text-align:center;
-		}
-	
-		nav .CenterNavButton:hover {
-			background:transparent url(images/ui/NavButtonHover.png);
-		}
-		
-		nav .navlist .tagTitle{
-			padding-top:17px;
-		}
-		
-		nav .navlist .dropdown-content {
-			top:87px;
-			display: none;
-			position: absolute;
-			min-width: 100%;
-			overflow:auto;
-		}
-
-		nav .navlist .dropdown-content a {
-				
-				z-index:0;
-				padding-top:10px;
-				padding-bottom:10px;
-				width:350px;
-				height:auto;
-				background:transparent url(images/ui/NavButtonDrop.png);
-				background-repeat:no-repeat;
-				background-size:350px 60px;
-				
-				
-				font-size:28px;
-				color:#FFF44F;
-				font-family:Friz;
-				text-decoration: none;
-				
-				
-				text-align:center;
-	
-				
-				float:left;
-			}
-
-			nav .navlist .dropdown-content a:hover {
-				background:transparent url(images/ui/NavButtonDropHover.png);
-				background-repeat:no-repeat;
-				background-size:350px 60px;
-				
-			}
-		nav .navlist .dropdown-content .dropcap {
-			display: block;
-			z-index:0;
-				padding-top:10px;
-				padding-bottom:10px;
-			width:350px;
-				height:auto;
-			background:transparent url(images/ui/NavButtonDropBottomCap.png);
-				background-repeat:no-repeat;
-				background-size:350px 18px;
-		
-		}	
-
-		nav .navlist .dropdown-content .dropcap:hover {		
-		background:transparent url(images/ui/NavButtonDropBottomCap.png);
-				background-repeat:no-repeat;
-				background-size:350px 18px;
-		}
-		
-		nav .dropdown {
-			position: relative;
-			display: inline-block;
-
-			padding-top: 10px;
-			padding-right: 10px;
-			padding-bottom: 10px;
-			padding-left: 10px;
-			
-			z-index:2;
-			}
-		
-			nav .dropdown:hover .dropdown-content {
-				display: block;
-			}
-				
-			nav .dropdown:hover{
-			}
-			
-#MainName{
-	color:#FFFFFF;
-	font-family:Joystix;
-	font-size:300%;
-	
-	vertical-align:left;
-		
-	padding-right: 40px;
-	padding-bottom:20px;
-	margin-right: 10px;
-	
-	display:table-cell;
-
-    text-shadow:
-    -2px -2px 0 #FF00FF,
-    2px -2px 0 #00FFFF,
-    -2px 2px 0 #FF0000,
-    2px 2px 0 #0000FF; 
-}
 			
 .mySlides{
 	margin:auto;
@@ -300,90 +118,15 @@ nav{
 	height:auto;
 }
 
-.w3-animate-left{
-	position:relative;
-	animation:animateleft 0.4s
-}
-@keyframes animateleft{
-	from{
-		left:-300px;
-		opacity:0
-	} to{
-		left:0;
-		opacity:1
-	}
-}	
-
-.w3-animate-fading{
-	animation:fading 7s infinite
-}
-@keyframes fading{
-	0%{
-		opacity:0
-	}25%{
-		opacity:1
-	}75%{
-		opacity:1
-	}100%{
-		opacity:0
-	}
-}
-	
-.w3-display-container{
-	position:relative;
-}
-	
-.w3-display-container:hover {
-	display:block;
-}
-
-.w3-display-container:hover span
-
-.w3-button{
-	border:none;
-	display:inline-block;
-	padding:8px 16px;
+.thumbnail{
 	vertical-align:middle;
-	overflow:hidden;
-	text-decoration:none;
-	color:inherit;
-	background-color:inherit;
-	text-align:center;
-	cursor:pointer;
-	white-space:nowrap;
-
-	-webkit-touch-callout:none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
+	display:inline;
+	width:300px;
+	height:300px;
+	border-radius:25px;
 }
 
-	.w3-button:disabled{
-		cursor:not-allowed;
-		opacity:0.3
-	}
-
-	.w3-button:hover{
-		color:#000!important;
-		background-color:#ccc!important;
-	}
-
-.w3-display-left{
-	position:absolute;
-	top:50%;
-	left:0%;
-	transform:translate(0%,-50%);
-	//-ms-transform:translate(-0%,-50%);
-}
-
-.w3-display-right{
-	position:absolute;
-	top:50%;
-	right:0%;
-	transform:translate(0%,-50%);
-	//-ms-transform:translate(0%,-50%);
+.thumbnailwrapper{
 }
 
 .SocialCards{
