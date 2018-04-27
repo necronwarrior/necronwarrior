@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 $("#NAVFRAME").load("navbar.html");
 
-//slidestuff
+/*slidestuff
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -48,7 +48,7 @@ function carousel() {
 }
 
 var msg = "hello sebi";
-console.log(msg);
+console.log(msg);*/
 
 
 });
