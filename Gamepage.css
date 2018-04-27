@@ -1,0 +1,60 @@
+#Togglebutton{
+	width:20%;
+	height:130px;
+	background-color:#FC8120;
+	white-space:nowrap;
+	z-index: 10;
+		
+	font-size:28px;
+	color:#7B23A7;
+	font-family:joystix;
+	border-style:outset;
+	border-color:buttonface;
+		
+	background-color: #4FAAEC;
+
+	text-decoration: none;
+}
+	#Togglebutton:hover{
+		background-color: #C8CFEA;
+	}
+
+#wrapperbio { 
+	margin:auto;
+	width: 370px; 
+	height: 640px;  
+	overflow: hidden; 
+}
+
+#wrapperwhack { 
+	margin:auto;
+	width: 1280px; 
+	height: 768px;  
+	overflow: hidden; 
+}
+
+#scaled-framewhack { 
+	margin:auto;
+}
+
+#scaled-framebio { 
+	width: 740px; 
+	height: 1280px; 
+	border: 0px; 
+}
+
+#scaled-framebio {
+	zoom: 0.5;
+	-moz-transform: scale(0.5);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.5);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.5);
+	-webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#scaled-framebio  { 
+		zoom: 1; 
+	}
+}

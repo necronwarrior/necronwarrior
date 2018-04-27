@@ -10,6 +10,12 @@
 	box-sizing: inherit;
 
 }
+			
+.mySlides{
+	margin:auto;
+	width:50%;
+	height:auto;
+}
 
 .w3-animate-left{
 	position:relative;

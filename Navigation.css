@@ -8,7 +8,21 @@
     vertical-align: baseline;
     background: transparent;
 	box-sizing: inherit;
+}
 
+@font-face{
+	font-family:dpcomic;
+	src:url(fonts/dpcomic.ttf);
+}
+
+@font-face{
+	font-family:joystix;
+	src:url(fonts/joystix_monospace.ttf);
+}
+
+@font-face{
+	font-family:Friz;
+	src:url(fonts/Friz_Quadrata_Std_Regular.otf);
 }
 
 nav{
@@ -198,3 +212,67 @@ nav{
     -2px 2px 0 #FF0000,
     2px 2px 0 #0000FF; 
 }
+
+
+#upperbuffer{
+	padding-top:210px;
+}
+.SocialCards{
+	display:table-cell;
+	vertical-align:middle;
+}
+	
+.SocialCard{
+	display:inline-block;
+	height:71px;
+	width:99px;
+	margin:auto;
+	vertical-align:bottom;
+	background:transparent url(images/ui/social-cards-4db02a8933351b0870f1dc00fa58df807b83f09d96f145c4579d78fc01b2b079dd6c1fa4fcee4834eae4651e0b361fde995e1429c07585fdacb46c06c5f44a6a.png) 0 0 no-repeat;
+	transition:none;
+	margin:0 -20px
+}@media (min-width:40em){
+	.SocialCard{
+			margin:0 -15px
+	}
+}
+	.SocialCard--facebook{
+		background-position:0 0
+	}
+		.SocialCard--facebook:active,
+		.SocialCard--facebook:hover{
+			background-position:0 -77px
+		}
+			
+	.SocialCard--twitter{
+		background-position:-99px 0
+	}
+		.SocialCard--twitter:active,
+		.SocialCard--twitter:hover{
+			background-position:-99px -77px
+		}
+		
+	.SocialCard--linkedin{
+		background-position:-198px 0
+	}
+		.SocialCard--linkedin:active,
+		.SocialCard--linkedin:hover{
+			background-position:-198px -77px
+		}
+
+		
+	.SocialCard--instagram{
+		background-position:-297px 0
+	}
+		.SocialCard--instagram:active,
+		.SocialCard--instagram:hover{
+			background-position:-297px -77px
+		}
+		
+	.SocialCard--tumblr{
+	background-position:-396px 0
+	}
+		.SocialCard--tumblr:active,
+		.SocialCard--tumblr:hover{
+			background-position:-396px -77px
+		}
