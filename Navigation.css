@@ -29,26 +29,17 @@ nav{
 	list-style:none;
 	position: fixed;		
 	display:inline-block;
-	top: 0;
-	padding:1px;
+	top:0;
 	width:100%;
-	height:100px;
 	background: url(images/NavBarBG.png);
 	background-repeat:no-repeat;
 	background-size:100%;
 	white-space:nowrap;
 	z-index: 999;
 	overflow:hidden;
-	
-	border: 20px solid transparent;
-	padding:30px;
-    /*-webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
+	    /*-webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
    /* -o-border-image: url(images/ui/BottomBorder.png) 30% round; /* Opera 11-12.1 */
     /*border-image: url(images/ui/BottomBorder.png) 30% round; */
-	
-	border-top-width:0px;
-	border-left-width:0px;
-	border-right-width:0px;
 }
 
 	nav .navlist{
@@ -114,7 +105,6 @@ nav{
 		}
 		
 		nav .navlist .dropdown-content {
-			top:87px;
 			display: none;
 			position: absolute;
 			min-width: 100%;
@@ -124,8 +114,6 @@ nav{
 		nav .navlist .dropdown-content a {
 				
 				z-index:0;
-				padding-top:10px;
-				padding-bottom:10px;
 				width:347px;
 				height:auto;
 				background:transparent url(images/ui/NavButton.png);
@@ -174,10 +162,6 @@ nav{
 			position: relative;
 			display: inline-block;
 
-			padding-top: 10px;
-			padding-right: 10px;
-			padding-bottom: 10px;
-			padding-left: 10px;
 			
 			z-index:2;
 			}
