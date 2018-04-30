@@ -31,7 +31,7 @@ nav{
 	display:inline-block;
 	top:0;
 	width:100%;
-	background: url(images/NavBarBG.png);
+	background:darkviolet;
 	background-repeat:no-repeat;
 	background-size:100%;
 	white-space:nowrap;
