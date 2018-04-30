@@ -42,9 +42,9 @@ nav{
 	
 	border: 20px solid transparent;
 	padding:30px;
-    -webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
-    -o-border-image: url(images/ui/BottomBorder.png) 30% round; /* Opera 11-12.1 */
-    border-image: url(images/ui/BottomBorder.png) 30% round;
+    /*-webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
+   /* -o-border-image: url(images/ui/BottomBorder.png) 30% round; /* Opera 11-12.1 */
+    /*border-image: url(images/ui/BottomBorder.png) 30% round; */
 	
 	border-top-width:0px;
 	border-left-width:0px;
@@ -53,23 +53,17 @@ nav{
 
 	nav .navlist{
 
-		float:left;
 		display:inline-block;
 		font-size:28px;
 		color:#FFF44F;
 		font-family:Friz;
 		width:auto;
-		
-		padding-top: 10px;
-		padding-right: 10px;
-		padding-bottom: 10px;
-		padding-left: 10px;
-	
+		padding 0px;
 		text-decoration: none;
 	}
 		nav .LeftNavButton{
-			width:327px;
-			height:31px;
+			width:347px;
+			height:51px;
 			background:transparent url(images/ui/NavButton.png);
 			background-size:auto;
 		}
@@ -84,8 +78,8 @@ nav{
 		}
 
 		nav .RightNavButton{			
-			width:327px;
-			height:31px;
+			width:347px;
+			height:51px;
 			background:transparent url(images/ui/NavButton.png);
 			background-size:auto;
 		}
@@ -100,8 +94,8 @@ nav{
 		}
 		
 		nav .CenterNavButton{
-			width:327px;
-			height:31px;
+			width:347px;
+			height:51px;
 			background:transparent url(images/ui/NavButton.png);
 			background-size:auto;
 		}
@@ -132,11 +126,11 @@ nav{
 				z-index:0;
 				padding-top:10px;
 				padding-bottom:10px;
-				width:327px;
+				width:347px;
 				height:auto;
 				background:transparent url(images/ui/NavButton.png);
 				background-repeat:no-repeat;
-				background-size:327px 31px;
+				background-size:347px 51px;
 				
 				
 				font-size:28px;
@@ -154,7 +148,7 @@ nav{
 			nav .navlist .dropdown-content a:hover {
 				background:transparent url(images/ui/NavButtonHover.png);
 				background-repeat:no-repeat;
-				background-size:327px 31px;
+				background-size:347px 51px;
 				
 			}
 		nav .navlist .dropdown-content .dropcap {
@@ -162,18 +156,18 @@ nav{
 			z-index:0;
 				padding-top:10px;
 				padding-bottom:10px;
-			width:327px;
+			width:347px;
 				height:auto;
 			background:transparent url(images/ui/NavButtonDropBottomCap.png);
 				background-repeat:no-repeat;
-				background-size:327px 18px;
+				background-size:347px 18px;
 		
 		}	
 
 		nav .navlist .dropdown-content .dropcap:hover {		
 		background:transparent url(images/ui/NavButtonDropBottomCap.png);
 				background-repeat:no-repeat;
-				background-size:327px 18px;
+				background-size:347px 18px;
 		}
 		
 		nav .dropdown {
