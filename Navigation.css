@@ -66,8 +66,8 @@ nav{
 		text-decoration: none;
 	}
 		nav .LeftNavButton{
-			width:367px;
-			height:72px;
+			width:348px;
+			height:51px;
 			background:transparent url(images/ui/NavButton.png);
 			background-size:auto;
 		}
@@ -82,8 +82,8 @@ nav{
 		}
 
 		nav .RightNavButton{			
-			width:367px;
-			height:72px;
+			width:348px;
+			height:51px;
 			background:transparent url(images/ui/NavButton.png);
 			background-size:auto;
 		}
@@ -98,8 +98,8 @@ nav{
 		}
 		
 		nav .CenterNavButton{
-			width:367px;
-			height:72px;
+			width:348px;
+			height:51px;
 			background:transparent url(images/ui/NavButton.png);
 			background-size:auto;
 		}
@@ -130,11 +130,11 @@ nav{
 				z-index:0;
 				padding-top:10px;
 				padding-bottom:10px;
-				width:350px;
+				width:348px;
 				height:auto;
-				background:transparent url(images/ui/NavButtonDrop.png);
+				background:transparent url(images/ui/NavButton.png);
 				background-repeat:no-repeat;
-				background-size:350px 60px;
+				background-size:348px 51px;
 				
 				
 				font-size:28px;
@@ -150,9 +150,9 @@ nav{
 			}
 
 			nav .navlist .dropdown-content a:hover {
-				background:transparent url(images/ui/NavButtonDropHover.png);
+				background:transparent url(images/ui/NavButtonHover.png);
 				background-repeat:no-repeat;
-				background-size:350px 60px;
+				background-size:348px 51px;
 				
 			}
 		nav .navlist .dropdown-content .dropcap {
