@@ -31,6 +31,7 @@ nav{
 	display:inline-block;
 	top: 0;
 	padding:1px;
+	width:100%;
 	height:100px;
 	background: url(images/NavBarBG.png);
 	background-repeat:no-repeat;
@@ -57,7 +58,7 @@ nav{
 		font-size:28px;
 		color:#FFF44F;
 		font-family:Friz;
-
+		width:auto;
 		
 		padding-top: 10px;
 		padding-right: 10px;
