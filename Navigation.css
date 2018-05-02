@@ -108,14 +108,14 @@ nav{
 			display: none;
 			position: relative;
 			min-width: 100%;
-			overflow:auto;
+			overflow:visible;
 		}
 
 		nav .navlist .dropdown-content a {
 				
 				z-index:1;
 				width:347px;
-				height:auto;
+				height:51px;
 				background:transparent url(images/ui/NavButton.png);
 				background-repeat:no-repeat;
 				background-size:347px 51px;
