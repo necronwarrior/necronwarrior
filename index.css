@@ -66,8 +66,9 @@ blink, .blink {
 }
 
 .thumbnail{
+	z-index:0;
 	vertical-align:middle;
-	display:inline;
+	display:block;
 	width:300px;
 	height:300px;
 	border-radius:25px;
