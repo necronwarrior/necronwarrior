@@ -31,7 +31,7 @@ nav{
 	display:inline-block;
 	top:0;
 	width:100%;
-	background:darkviolet;
+	background:#BDA0CB;
 	background-repeat:no-repeat;
 	background-size:100%;
 	white-space:nowrap;
@@ -106,14 +106,14 @@ nav{
 		
 		nav .navlist .dropdown-content {
 			display: none;
-			position: absolute;
+			position: relative;
 			min-width: 100%;
 			overflow:auto;
 		}
 
 		nav .navlist .dropdown-content a {
 				
-				z-index:0;
+				z-index:1;
 				width:347px;
 				height:auto;
 				background:transparent url(images/ui/NavButton.png);
