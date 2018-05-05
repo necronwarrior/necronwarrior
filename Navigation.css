@@ -86,6 +86,7 @@ nav{
 		}
 		
 		nav .CenterNavButton{
+			padding-bottom:15px;
 			width:347px;
 			height:51px;
 			background:transparent url(images/ui/NavButton.png);
@@ -106,13 +107,13 @@ nav{
 		}
 		
 		nav .navlist .dropdown-content {
+			padding-top:15px;
 			display: none;
 			position: relative;
 			min-width: 100%;
 		}
 
 		nav .navlist .dropdown-content a {
-				
 				z-index:2;
 				width:347px;
 				height:51px;
