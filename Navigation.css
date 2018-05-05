@@ -54,7 +54,7 @@ nav{
 		text-decoration: none;
 	}
 		nav .LeftNavButton{
-			width:347px;
+			width:300px;
 			height:61px;
 			background:transparent url(images/ui/NavButton.png);
 			background-repeat:no-repeat;
@@ -75,7 +75,7 @@ nav{
 		}
 
 		nav .RightNavButton{			
-			width:347px;
+			width:300px;
 			height:61px;
 			background:transparent url(images/ui/NavButton.png);
 			background-repeat:no-repeat;
@@ -95,7 +95,7 @@ nav{
 		}
 		
 		nav .CenterNavButton{
-			width:347px;
+			width:300px;
 			height:61px;
 			background:transparent url(images/ui/NavButton.png);
 			background-repeat:no-repeat;
@@ -127,7 +127,7 @@ nav{
 
 		nav .navlist .dropdown-content a {
 				z-index:2;
-				width:347px;
+				width:300px;
 			height:37px;
 				background:transparent url(images/ui/NavButton.png);
 			background-repeat:no-repeat;
@@ -156,18 +156,18 @@ nav{
 			z-index:0;
 				padding-top:10px;
 				padding-bottom:10px;
-			width:347px;
+			width:300px;
 				height:auto;
 			background:transparent url(images/ui/NavButtonDropBottomCap.png);
 				background-repeat:no-repeat;
-				background-size:347px 18px;
+				background-size:100% 18px;
 		
 		}	
 
 		nav .navlist .dropdown-content .dropcap:hover {		
 		background:transparent url(images/ui/NavButtonDropBottomCap.png);
 				background-repeat:no-repeat;
-				background-size:347px 18px;
+				background-size:100% 18px;
 		}
 		
 		nav .dropdown {
@@ -267,4 +267,12 @@ nav{
 		.SocialCard--tumblr:active,
 		.SocialCard--tumblr:hover{
 			background-position:-396px -77px
+		}
+		
+	.SocialCard--GitHub{
+	background-position:-495px 0
+	}
+		.SocialCard--GitHub:active,
+		.SocialCard--GitHub:hover{
+			background-position:-495px -77px
 		}
