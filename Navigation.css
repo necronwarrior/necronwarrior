@@ -269,10 +269,10 @@ nav{
 			background-position:-396px -77px
 		}
 		
-	.SocialCard--GitHub{
+	.SocialCard--github{
 	background-position:-495px 0
 	}
-		.SocialCard--GitHub:active,
-		.SocialCard--GitHub:hover{
+		.SocialCard--github:active,
+		.SocialCard--github:hover{
 			background-position:-495px -77px
 		}
