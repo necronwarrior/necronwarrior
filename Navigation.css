@@ -55,25 +55,31 @@ nav{
 	}
 		nav .LeftNavButton{
 			width:347px;
-			height:51px;
+			height:61px;
 			background:transparent url(images/ui/NavButton.png);
-			background-size:auto;
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 		}
 		
 				
 		nav .LeftNavButton .tagTitle{
+			z-index:1;
 			text-align:center;
 		}
 		
 		nav .LeftNavButton:hover {
 			background:transparent url(images/ui/NavButtonHover.png);
+			
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 		}
 
 		nav .RightNavButton{			
 			width:347px;
-			height:51px;
+			height:61px;
 			background:transparent url(images/ui/NavButton.png);
-			background-size:auto;
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 		}
 		
 		nav .RightNavButton .tagTitle{
@@ -83,14 +89,17 @@ nav{
 		
 		nav .RightNavButton:hover {
 			background:transparent url(images/ui/NavButtonHover.png);
+			
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 		}
 		
 		nav .CenterNavButton{
-			padding-bottom:15px;
 			width:347px;
-			height:51px;
+			height:61px;
 			background:transparent url(images/ui/NavButton.png);
-			background-size:auto;
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 		}
 				
 		nav .CenterNavButton .tagTitle{
@@ -100,6 +109,9 @@ nav{
 	
 		nav .CenterNavButton:hover {
 			background:transparent url(images/ui/NavButtonHover.png);
+			
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 		}
 		
 		nav .navlist .tagTitle{
@@ -116,11 +128,10 @@ nav{
 		nav .navlist .dropdown-content a {
 				z-index:2;
 				width:347px;
-				height:51px;
+			height:37px;
 				background:transparent url(images/ui/NavButton.png);
-				background-repeat:no-repeat;
-				background-size:347px 51px;
-				
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 				
 				font-size:28px;
 				color:#FFF44F;
@@ -136,8 +147,8 @@ nav{
 
 			nav .navlist .dropdown-content a:hover {
 				background:transparent url(images/ui/NavButtonHover.png);
-				background-repeat:no-repeat;
-				background-size:347px 51px;
+			background-repeat:no-repeat;
+			background-size:100% 100%;
 				
 			}
 		nav .navlist .dropdown-content .dropcap {
