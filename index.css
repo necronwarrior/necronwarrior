@@ -125,7 +125,6 @@ blink, .blink {
 
 .grid-item{
 	display:inline-block; /* displayed as inline elements */
-    position: relative; /* so the images can be positioned relatively to this */
 }
 	.grid-item:hover{
 		position: absolute;
