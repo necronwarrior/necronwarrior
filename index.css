@@ -12,7 +12,7 @@
 }
 
 body {
-	background-color:Black;
+	background-color:White;
 	padding-top:150px;
 	padding:0px;
 	margin:0px;
@@ -22,7 +22,7 @@ body {
 p{
 	margin-left:10%; 
 	margin-right:10%; 
-	color:white;
+	color:Black;
 	font-family:Friz;
 }
 
@@ -124,7 +124,12 @@ blink, .blink {
 }
 
 .grid-item{
+	display:inline-block; /* displayed as inline elements */
+    position: relative; /* so the images can be positioned relatively to this */
 }
+	.grid-item:hover{
+		position: absolute;
+	}
 
 #JackImage{
 	zoom: 0.5;
