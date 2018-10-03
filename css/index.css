@@ -137,7 +137,7 @@ blink, .blink {
 	width:99px;
 	margin:auto;
 	vertical-align:bottom;
-	background:transparent url(images/ui/social-cards-4db02a8933351b0870f1dc00fa58df807b83f09d96f145c4579d78fc01b2b079dd6c1fa4fcee4834eae4651e0b361fde995e1429c07585fdacb46c06c5f44a6a.png) 0 0 no-repeat;
+	background:transparent url(social-cards.png) 0 0 no-repeat;
 	transition:none;
 	margin:0 -20px
 }@media (min-width:40em){
