@@ -10,197 +10,63 @@
 	box-sizing: inherit;
 }
 
-@font-face{
-	font-family:dpcomic;
-	src:url(fonts/dpcomic.ttf);
+body{
+	display:inherit;
+	margin:0px;
 }
 
 @font-face{
-	font-family:joystix;
-	src:url(fonts/joystix_monospace.ttf);
+	font-family:Consolas;
+	src:url(../fonts/CONSOLA.ttf);
 }
 
 @font-face{
 	font-family:Friz;
-	src:url(fonts/Friz_Quadrata_Std_Regular.otf);
+	src:url(../fonts/Friz_Quadrata_Std_Regular.otf);
 }
 
 nav{
 	position: fixed;		
 	display:inline-block;
-	top:0;
-	padding:1px;
 	width:100%;
-	height:200px;
-	background:#AAAAAA;
-	background-repeat:no-repeat;
+	height:auto;
+	background:#434343;
+	opacity:0.5;
 	background-size:100%;
 	white-space:nowrap;
-	z-index: 999;
 	overflow:visible;
-	    /*-webkit-border-image: url(images/ui/BottomBorder.png) 30% round; /* Safari 3.1-5 */
-   /* -o-border-image: url(images/ui/BottomBorder.png) 30% round; /* Opera 11-12.1 */
-    /*border-image: url(images/ui/BottomBorder.png) 30% round; */
 }
 
 	nav .navlist{
-
 		display:inline-block;
-		font-size:28px;
-		color:#FFF44F;
-		font-family:Friz;
-		width:auto;
-		padding:0px;
-		text-decoration: none;
+		font-size:22px;
+		color:#FFFDD0;
+		text-decoration:none;
+		padding-left:10px;
+		padding-right:10px;
+		font-family:Consolas;
 	}
-		nav .LeftNavButton{
-			width:300px;
-			height:61px;
-			background:transparent url(images/ui/NavButton.png);
-			background-repeat:no-repeat;
-			background-size:100% 100%;
-		}
-		
-				
-		nav .LeftNavButton .tagTitle{
-			z-index:1;
-			text-align:center;
-		}
-		
-		nav .LeftNavButton:hover {
-			background:transparent url(images/ui/NavButtonHover.png);
-			
-			background-repeat:no-repeat;
-			background-size:100% 100%;
-		}
-
-		nav .RightNavButton{			
-			width:300px;
-			height:61px;
-			background:transparent url(images/ui/NavButton.png);
-			background-repeat:no-repeat;
-			background-size:100% 100%;
-		}
-		
-		nav .RightNavButton .tagTitle{
-			z-index:1;
-			text-align:center;
-		}
-		
-		nav .RightNavButton:hover {
-			background:transparent url(images/ui/NavButtonHover.png);
-			
-			background-repeat:no-repeat;
-			background-size:100% 100%;
-		}
-		
-		nav .CenterNavButton{
-			width:300px;
-			height:61px;
-			background:transparent url(images/ui/NavButton.png);
-			background-repeat:no-repeat;
-			background-size:100% 100%;
-		}
-				
-		nav .CenterNavButton .tagTitle{
-			z-index:1;
-			text-align:center;
-		}
 	
-		nav .CenterNavButton:hover {
-			background:transparent url(images/ui/NavButtonHover.png);
-			
-			background-repeat:no-repeat;
-			background-size:100% 100%;
+		nav .NavButtonLeft{
+			width:auto;
+			border-style:solid;
+			border-width: 0px 5px 0px 5px;
 		}
 		
-		nav .navlist .tagTitle{
-			padding-top:17px;
+		nav .NavButton{
+			width:auto;
+			border-style:solid;
+			border-width: 0px 5px 0px 0px;
 		}
 		
-		nav .navlist .dropdown-content {
-			padding-top:15px;
-			display: none;
-			position: relative;
-			min-width: 100%;
+		nav .NavButton:hover {
 		}
-
-		nav .navlist .dropdown-content a {
-				z-index:2;
-				width:300px;
-			height:37px;
-				background:transparent url(images/ui/NavButton.png);
-			background-repeat:no-repeat;
-			background-size:100% 100%;
-				
-				font-size:28px;
-				color:#FFF44F;
-				font-family:Friz;
-				text-decoration: none;
-				
-				
-				text-align:center;
-	
-				
-				float:left;
-			}
-
-			nav .navlist .dropdown-content a:hover {
-				background:transparent url(images/ui/NavButtonHover.png);
-			background-repeat:no-repeat;
-			background-size:100% 100%;
-				
-			}
-		nav .navlist .dropdown-content .dropcap {
-			display: block;
-			z-index:0;
-				padding-top:10px;
-				padding-bottom:10px;
-			width:300px;
-				height:auto;
-			background:transparent url(images/ui/NavButtonDropBottomCap.png);
-				background-repeat:no-repeat;
-				background-size:100% 18px;
-		
-		}	
-
-		nav .navlist .dropdown-content .dropcap:hover {		
-		background:transparent url(images/ui/NavButtonDropBottomCap.png);
-				background-repeat:no-repeat;
-				background-size:100% 18px;
-		}
-		
-		nav .dropdown {
-			position: relative;
-			display: inline-block;
-
-			
-			z-index:3;
-			}
-		
-			nav .dropdown:hover .dropdown-content {
-				display: block;
-			}
-				
-			nav .dropdown:hover{
-			}
 			
 #MainName{
-	color:#FFFFFF;
-	font-family:Friz;
-	font-size:300%;
-	
+	color:#FFFDD0;
+	font-size:28px;
 	vertical-align:left;
-		
-	padding-right: 40px;
-	padding-bottom:20px;
-	margin-right: 10px;
-	
-	display:table-cell;
-
-    text-shadow:
-    -2px -2px 0 #000000,
-
+	text-align:center;
 }
 
 
