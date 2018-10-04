@@ -37,20 +37,25 @@ p{
 div{
 }
 
+.UnderHeaders{
+		padding-top:40px;
+	}
+
 h1{
-	margin-top: 0px;
+	margin: 0 !important;
 	color:white;
 	font-family:Consolas;
+	font-size:30px;
 	background-color:#282828;
 	width:100%;
 	text-align:center;
 }
 
 h2 {
-	margin-top: 0px;
+	margin-top:0px;
 	color:white;
 	font-family:Consolas;
-	font-size:50%;
+	font-size:18px;
 	background-color:#282828;
 	width:100%;
 	text-align:center;
@@ -60,19 +65,6 @@ footer{
 	margin:auto;
 	width:50%;
 }
-
-blink, .blink {
-	color:white;
-	-webkit-animation: blink 1s step-end infinite;
-	-moz-animation: blink 1s step-end infinite;
-	-o-animation: blink 1s step-end infinite;
-	animation: blink 1s step-end infinite;
-}
-
-@-webkit-keyframes blink { 67% { opacity: 0 }}
-@-moz-keyframes blink {  67% { opacity: 0 }}
-@-o-keyframes blink {  67% { opacity: 0 }}
-@keyframes blink {  67% { opacity: 0 }}
 
 #downloadDis{
 
@@ -96,10 +88,8 @@ blink, .blink {
 	border-radius:25px;
 }
 
-.CenteredText{
-	position: absolute;
-	font-size:large;
-	transform: translate(10%, -850%);
+.topgap{
+	height:700px;
 }
 
 #ThumbTransition{
@@ -149,10 +139,27 @@ blink, .blink {
 	}
 
 .SocialCards{
-	vertical-align:middle;
-	width:434px;
-	margin:auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%;
+	padding-bottom:5%;
 }
+	
+.SocialCard{	
+	display:inline-block;		
+	height:71px;	
+	width:99px;	
+	margin:auto;		
+	vertical-align:bottom;	
+	background:transparent url(../images/social-cards.png) 0 0 no-repeat;	
+	transition:none;	
+	margin:0 -20px	
+}@media (min-width:40em){	
+	.SocialCard{	
+			margin:0 -15px	
+	}	
+}	 	
 
 	.SocialCard--facebook{
 		background-position:0 0
