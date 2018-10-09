@@ -12,12 +12,12 @@
 
 @font-face{
 	font-family:Consolas;
-	src:url(../fonts/CONSOLA.ttf);
+	src:url(../fonts/CONSOLA.ttf),url(../fonts/Consolas.eot);
 }
 
 @font-face{
 	font-family:Friz;
-	src:url(../fonts/Friz_Quadrata_Std_Regular.otf);
+	src:url(../fonts/Friz_Quadrata_Std_Regular.otf),url(../fonts/Consolas.eot);
 }
 
 body {
@@ -182,6 +182,14 @@ footer{
 	width:auto;
 	justify-items:center;
 	align-items:top;
+	grid:true;
+	/*for IE - MIGHT LOOK INTO THIS LATER*/
+	display: -ms-inline-grid;
+	 /* also faking 1vw grid-gap */
+	 -ms-grid-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+	  /* also faking 1vw grid-gap */
+	  -ms-grid-rows: 150px 1vw 50px;
+	/*end IE*/
 	display:grid;
 	grid-template-columns:30% auto 30%;
 	grid-row-gap:50px;
