@@ -35,8 +35,11 @@ p{
 }
 
 ul{
+	color:#FFFDD0;
+	font-family:Consolas;
 	list-style:none;
 	padding:0px;
+	text-align:center;
 }
 
 li{
@@ -174,6 +177,10 @@ footer{
 
 #ThumbTransition:hover div{
 	opacity: 1;
+}
+
+.centered{
+	text-align:center;
 }
 
 .grid-container{
