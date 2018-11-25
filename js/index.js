@@ -8,7 +8,7 @@ $("#NAVFRAME").load("navbar.html");
 
 var bisMenuFolded = false;
 
-$("#NAVFRAME").onchange = resize(){
+/*$("#NAVFRAME").onchange = resize(){
 	if($("#NAVFRAME").offsetWidth<200px && bisMenuFolded==false)
 	{
 		&("#FoldableNavMenu").visibility = hidden;
@@ -21,6 +21,6 @@ $("#NAVFRAME").onchange = resize(){
 		&("#FoldableNavMenu").visibility = visible;
 		&("#MenuUnfold").visibility = hidden;
 		bisMenuFolded=false;
-	}
+	}*/
 };
 });
