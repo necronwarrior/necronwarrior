@@ -6,49 +6,21 @@ $(document).ready(function() {
 
 $("#NAVFRAME").load("navbar.html");
 
-/*slidestuff
-var slideIndex = 1;
-showDivs(slideIndex);
+var bisMenuFolded = false;
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
-}
-
-document.getElementById("ButtonClickLeft").onclick = function() {
-	showDivs(slideIndex -= 1);
+$("#NAVFRAME").onchange = resize(){
+	if($("#NAVFRAME").offsetWidth<200px && bisMenuFolded==false)
+	{
+		&("#FoldableNavMenu").visibility = hidden;
+		&("#MenuUnfold").visibility = visible;
+		bisMenuFolded=true;
+	}
+	
+	if($("#NAVFRAME").offsetWidth>200px && bisMenuFolded==true)
+	{
+		&("#FoldableNavMenu").visibility = visible;
+		&("#MenuUnfold").visibility = hidden;
+		bisMenuFolded=false;
+	}
 };
-document.getElementById("ButtonClickRight").onclick = function() {
-	showDivs(slideIndex += 1);
-};
-
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 6000); // Change image every 2 seconds
-}
-
-var msg = "hello sebi";
-console.log(msg);*/
-
-
 });
