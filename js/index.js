@@ -21,6 +21,6 @@ var bisMenuFolded = false;
 		&("#FoldableNavMenu").visibility = visible;
 		&("#MenuUnfold").visibility = hidden;
 		bisMenuFolded=false;
-	}*/
-};
+	}
+};*/
 });
