@@ -141,6 +141,10 @@ footer{
 	margin-right:20%;
 }
 
+#NAVFRAME{
+	padding-bottom: 50px;
+}
+
 .thumbnail{
 	z-index:0;
 	vertical-align:middle;
